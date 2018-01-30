@@ -1,0 +1,1 @@
+ahk2exe /in .\main.ahk /icon .\icon.ico /out "shortcuts.exe"
