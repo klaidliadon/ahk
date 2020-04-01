@@ -3,54 +3,19 @@ Menu, Tray, Tip, Shortcuts by Klaid Liadon
 
 #SingleInstance force
 
->!vk38::	Send {U+221E} ; ∞
-<^>!vk38::	Send {U+221E} ; ∞
->!vk4D::	Send {U+266A} ; ♪
-<^>!vk4D::	Send {U+266A} ; ♪
+RAlt & 8:: Send {U+221E} ; ∞
+RAlt & m::Send {U+266A} ; ♪
 
->!vk4E::	Send {U+00F1} ; ñ
-<^>!vk4E::	Send {U+00F1} ; ñ
+RAlt & n::Send, % (GetKeyState("Shift","P")?"{U+00D1}":"{U+00F1}") ; ñ Ñ
 
->!vk41::	Send {U+00E0} ; à
-<^>!vk41::	Send {U+00E0} ; à
->!vk45::	Send {U+00E8} ; è
-<^>!vk45::	Send {U+00E8} ; è
->!vk49::	Send {U+00EC} ; ì
-<^>!vk49::	Send {U+00EC} ; ì
->!vk4F::	Send {U+00F2} ; ò
-<^>!vk4F::	Send {U+00F2} ; ò
->!vk55::	Send {U+00F9} ; ù
-<^>!vk55::	Send {U+00F9} ; ù
+RAlt & a::Send, % (GetKeyState("Shift","P")?"{U+00C0}":"{U+00E0}") ; à À
+RAlt & e::Send, % (GetKeyState("Shift","P")?"{U+00C8}":"{U+00E8}") ; è È
+RAlt & i::Send, % (GetKeyState("Shift","P")?"{U+00CC}":"{U+00EC}") ; ì Ì
+RAlt & o::Send, % (GetKeyState("Shift","P")?"{U+00D2}":"{U+00F2}") ; ò Ò
+RAlt & u::Send, % (GetKeyState("Shift","P")?"{U+00D9}":"{U+00F9}") ; ù Ù
 
->!+vk41::	Send {U+00C0} ; À
-<^>!+vk41::	Send {U+00C0} ; À
->!+vk45::	Send {U+00C8} ; È
-<^>!+vk45::	Send {U+00C8} ; È
->!+vk49::	Send {U+00CC} ; Ì
-<^>!+vk49::	Send {U+00CC} ; Ì
->!+vk4F::	Send {U+00D2} ; Ò
-<^>!+vk4F::	Send {U+00D2} ; Ò
->!+vk55::	Send {U+00D9} ; Ù
-<^>!+vk55::	Send {U+00D9} ; Ù
-
->!vk42::	Send {U+03B2} ; β
-<^>!vk42::	Send {U+03B2} ; β
->!vk4C::	Send {U+03BB} ; λ
-<^>!vk4C::	Send {U+03BB} ; λ
->!vk46::	Send {U+03C6} ; φ
-<^>!vk46::	Send {U+03C6} ; φ
->!vk50::	Send {U+03C0} ; π
-<^>!vk50::	Send {U+03C0} ; π
->!vk57::	Send {U+03C9} ; ω
-<^>!vk57::	Send {U+03C9} ; ω
-
->!+vk42::	Send {U+0392} ; Β
-<^>!+vk42::	Send {U+0392} ; Β
->!+vk4C::	Send {U+039B} ; Λ
-<^>!+vk4C::	Send {U+039B} ; Λ
->!+vk46::	Send {U+03A6} ; Φ
-<^>!+vk46::	Send {U+03A6} ; Φ
->!+vk50::	Send {U+03A0} ; Π
-<^>!+vk50::	Send {U+03A0} ; Π
->!+vk57::	Send {U+03A9} ; Ω
-<^>!+vk57::	Send {U+03A9} ; Ω
+RAlt & b::Send, % (GetKeyState("Shift","P")?"{U+0392}":"{U+03B2}") ; β
+RAlt & l::Send, % (GetKeyState("Shift","P")?"{U+039B}":"{U+03BB}") ; λ
+RAlt & f::Send, % (GetKeyState("Shift","P")?"{U+03A6}":"{U+03C6}") ; φ
+RAlt & p::Send, % (GetKeyState("Shift","P")?"{U+03A0}":"{U+03C0}") ; π
+RAlt & w::Send, % (GetKeyState("Shift","P")?"{U+03A9}":"{U+03C9}") ; ω
