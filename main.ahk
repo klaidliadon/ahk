@@ -3,6 +3,9 @@ Menu, Tray, Tip, Shortcuts by Klaid Liadon
 
 #SingleInstance force
 
+LWin & WheelUp::Send, {LCtrl up}{LWin down}{LCtrl down}{Right}{LWin up}{LCtrl up}
+LWin & WheelDown::Send, {LCtrl up}{LWin down}{LCtrl down}{Left}{LWin up}{LCtrl up}
+
 RAlt & 8:: Send {U+221E} ; ∞
 RAlt & m::Send {U+266A} ; ♪
 
